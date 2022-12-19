@@ -1,0 +1,14 @@
+<h3>{{ user.firstName }} {{ user.lastName }}</h3>
+<p>Income : <span [innerText]="user.income"></span></p>
+<p>Date of Birth : <span [innerText]="user.dob"></span></p>
+<p>
+  Total Votes : {{ user.votes }}
+  <!-- <input
+    type="number"
+    [value]="user.votes"
+    (change)="changeVote(txtVote)"
+    #txtVote
+  /> -->
+
+  <input type="number" [(ngModel)]="user.votes" />
+</p>
