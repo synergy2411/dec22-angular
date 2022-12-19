@@ -1,4 +1,4 @@
-<h3>{{ user.firstName }} {{ user.lastName }}</h3>
+<ng-content select=".username"></ng-content>
 <p>Income : <span [innerText]="user.income"></span></p>
 <p>Date of Birth : <span [innerText]="user.dob"></span></p>
 <p>
@@ -12,3 +12,5 @@
 
   <input type="number" [(ngModel)]="user.votes" />
 </p>
+
+<!-- <ng-content select="footer"></ng-content> -->
